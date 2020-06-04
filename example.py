@@ -52,5 +52,4 @@ def factorial(n):
 if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose=True)
-    #  verbose 默认是flase，出错提示。
-    #  当为True时，不论对错都提示。
+    #  verbose 默认是flase，出错提示。 当为True时，不论对错都提示。
