@@ -1,0 +1,27 @@
+1.关系数据库：mysql、MariDB
+    菲关系数据库：Mongodb、redis
+
+2.mysql数据库操作
+    1）链接数据库
+    mysql -u root -p   u是用户名   p:需要用密码登录数据库
+    2）查看数据库
+    show databases；
+    3）选择数据库
+    use database_name；
+    4）查看数据库中的table表
+    show tables
+    5）查看表格的结构
+    desc tables
+    6)查看表中的数据
+    select * from table_name;
+    7)查看数据并限制数量
+    select * from table_name limit 10;
+
+3.数据库管理工具（查看）
+    sequelpro  http://www.sequelpro.com/  mac电脑用
+    win10下用MySQL Workbench对数据库进行操作
+
+4.命令行操作数据库
+    创建数据库   create database Examination;
+    删除数据库   drop   datatbase Examination;
+

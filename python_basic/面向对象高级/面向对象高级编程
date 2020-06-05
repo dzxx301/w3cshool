@@ -1,0 +1,21 @@
+1.定义一个class后，创建了一个class的实例后，我们可以给该实例绑定任何属性和方法，这就是动态语言的灵活性。
+    给一个实例绑定的方法，对另一个实例是不起作用的
+    给class绑定方法后，所有实例均可调用
+2.使用__slots__
+    Python允许在定义class的时候，定义一个特殊的__slots__变量，来限制该class实例能添加的属性：
+             class Student(object):
+                    __slots__ = ('name', 'age') # 用tuple定义允许绑定的属性名称
+
+
+    >>> s = Student() # 创建新的实例
+    >>> s.name = 'Michael' # 绑定属性'name'
+    >>> s.age = 25 # 绑定属性'age'
+    >>> s.score = 99 # 绑定属性'score'
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    AttributeError: 'Student' object has no attribute 'score'
+
+3.使用@property
+     Python内置的@property装饰器就是负责把一个方法变成属性调用的.
+     @property就是使用getter方法，如果加上setter方法，意思就是定义属性既具有读写功能，
+     如果只有getter，表示只读属性
