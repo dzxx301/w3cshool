@@ -1,0 +1,12 @@
+1. requests库 用以获取网页信息
+   1) r = requests.get("https://unsplash.com")
+      向网站发送了一个get请求，然后网站会返回一个response
+   2) r = requests.post("http://httpbin.org/post")
+       无参数的post请求
+   3)payload = {'key1': 'value1', 'key2': 'value2'}
+    r = requests.post("http://httpbin.org/post", data=payload)
+      post请求多用来提交表单数据，即填写一堆输入框，然后提交
+   4)r = requests.put("http://httpbin.org/put")
+     r = requests.delete("http://httpbin.org/delete")
+     r = requests.head("http://httpbin.org/get")
+     r = requests.options("http://httpbin.org/get")
