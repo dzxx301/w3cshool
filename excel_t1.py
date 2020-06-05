@@ -1,7 +1,7 @@
 # !/usr/bin/python
 # -*- coding:utf-8 -*-
 '''
-程序想用面向对象的思路编写程序
+程序利用面向对象的思路编写程序，修改
 '''
 import openpyxl
 
